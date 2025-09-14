@@ -11,5 +11,5 @@ while (isNaN(x) || args[0] === undefined){
            row += "x";
         }
          console.log(row);
-         i++;
+         i++ ;
     }
