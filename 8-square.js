@@ -1,9 +1,10 @@
 const args = process.argv.slice(2);
 const x = Number(args[0]);
 
-while (isNaN(x) || args[0] === undefined){
-    console.log("Missing size");
-}
+if (isNaN(x) || args[0] === undefined) {
+  console.log("Missing size");
+} else {
+
     let i = 0; 
     while(i < x){
         let row = "";
@@ -13,3 +14,4 @@ while (isNaN(x) || args[0] === undefined){
          console.log(row);
          i++ ;
     }
+}
