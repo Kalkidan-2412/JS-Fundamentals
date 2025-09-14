@@ -1,18 +1,22 @@
 const args = process.argv.slice(2);
-const x = Number(args[0]);
+let x = Number(args[0]);
 
-while (isNaN(x)){
-    console.log("Missing size");
+while (isNaN(x) || args[0] === undefined) {
+  console.log("Missing size");
+  process.exit(1);
+  // Prevent infinite loop by exiting manually
+  process.exit(1);
 }
-while ( args[0] === undefined){
-    console.log("Missing size");
+
+let i = 0;
+while (i < x) {
+  let row = "";
+  let j = 0;
+  while (j < x) {
+    row += "x";
+    j++;
+  }
+  console.log(row);
+  i++;
 }
-    let i = 0; 
-    while(i < x){
-        let row = "";
-        for(let j = 0; j < x; j++){
-           row += "x";
-        }
-         console.log(row);
-         i++ ;
-    }
+
