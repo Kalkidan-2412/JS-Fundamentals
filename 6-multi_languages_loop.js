@@ -6,7 +6,7 @@ const sentences = [
 ]
 
 let i = 0;
-while(i < sentences.length){
+while (i < sentences.length){
     console.log(sentences[i]);
     i++;
 }
