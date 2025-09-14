@@ -4,9 +4,9 @@ const x = Number(args[0]);
 if (isNaN(x)) {
   console.log("Missing number of occurrences");
 } else {
-  let output = "";
-  for (let i = 0; i < x; i++) {
-    output += "C is fun\n";
+  let output = "C is fun";
+  for ( i = 0; i < x; i++) {
+     console.log(output);
   }
-  console.log(output.trim());
+  
 }
